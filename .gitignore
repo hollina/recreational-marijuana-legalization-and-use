@@ -3,6 +3,7 @@
 #######################
 .DS_Store
 data
+stata_packages
 latex/latex_figures
 latex/latex_tables
 latex/figures

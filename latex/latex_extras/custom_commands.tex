@@ -27,3 +27,9 @@
 \addtolength{\vfoot}{\footskip}%
 \raisebox{\hfoot}[0pt][0pt]{\rlap{\hspace{\vfoot}\rotatebox[origin=cB]{90}{\thepage}}}\fi}
 %http://tex.stackexchange.com/questions/209685/landscape-mode-and-page-numbering
+\newpagestyle{mypage}{%
+  \headrule
+  \sethead{\shortstack[l]{Section \thesubsection:~\subsectiontitle }}{}{}
+  \setfoot{}{\thepage}{}
+}
+\settitlemarks{section,subsection,subsubsection}

@@ -16,7 +16,7 @@
 % Osamu Iida), nissya.bst (by Koichi Higuchi), aer.bst, jfm.bst, jplain.bst.
 % I would like to thank the authors of these bst files.
 
-% Bug reports, requests and suggestions are welcome. 
+% Bug reports, requests and suggestions are welcome.
 
 % For changelogs, see CHANGES.txt file.
 
@@ -37,14 +37,14 @@ FUNCTION {econ.debug}
 % Use \bysame or not.
 %
 % If set to #0, \bysame is not used.
-% If set to #1, \bysame is used 
+% If set to #1, \bysame is used
 % If set to #2, \bysame is used (alternative abbreviation style).
 %
 % Note that integer number is expressed as # + integer in bst file.
 % \bysame is the function that abbreviates succession of the same authors' name by ---.
 %
 % See econ-sample.pdf for details.
-% 
+%
 FUNCTION {bst.use.bysame}
 % { #0 }    % Not use \bysame
 { #1 }    % -> Use \bysame (default)
@@ -65,8 +65,8 @@ FUNCTION {bst.author.name}
 % { #1 }
 % { #2 }
 
-% Case of #0: First author -> last-first, other authors -> first-last. 
-% Fujita, Masahisa, Paul R. Krugman, and Anthony J. Venables. 
+% Case of #0: First author -> last-first, other authors -> first-last.
+% Fujita, Masahisa, Paul R. Krugman, and Anthony J. Venables.
 
 % Case of #1: All authors -> last-first
 % Fujita, Masahisa, Krugman, Paul R., and Venables, Anthony J.
@@ -94,7 +94,7 @@ FUNCTION {bst.title.lower.case}
 %
 FUNCTION {bst.hide.title}
 { #0 }    % #0 -> Title field is displayed (default)
-% { #1 }    % Non-zer -> Title field is hidden 
+% { #1 }    % Non-zer -> Title field is hidden
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -152,11 +152,11 @@ FUNCTION {bst.number.index.bibhang.hund}
 %
 % If set to #0, year is placed right after "author".
 % If set to non-zero, year is placed at the end (before note field) except for
-% aritcle type entry. 
+% aritcle type entry.
 %
 % In article type entry, the position of year changes according to the
 % following rule:
-% 
+%
 % #1 -> year is placed at the end.
 % #2 -> year is placed after journal name in aritcle type entry.
 % #3 -> year is placed after volume in aritcle type entry.
@@ -207,7 +207,7 @@ FUNCTION {bst.notuse.absorder.field}
 % { #1 }    % Non-#0 -> Not use absorder.
 %
 % Order of priority to sort items
-% 
+%
 % absorder -> author -> year -> order -> month -> title
 %
 % wehre absorder and order fields are specific to econ.bst.
@@ -268,7 +268,7 @@ FUNCTION {bst.and.others}
 { " et~al." }    % (default)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%       author 
+%       author
 
 % The string before author:
 %
@@ -407,7 +407,7 @@ FUNCTION {bst.volume.post}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Hide number.  If non-zero, number is suppressed. 
+% Hide number.  If non-zero, number is suppressed.
 FUNCTION {bst.hide.number}
 { #0 }    % #0 -> show number field (default)
 % { #1 }    % non-#0 -> Hide number field.
@@ -423,7 +423,7 @@ FUNCTION {bst.number.post}
 { "" }    % (default)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%       in 
+%       in
 
 % In
 %
@@ -498,7 +498,7 @@ FUNCTION {bst.address.post}
 
 FUNCTION {bst.address.position}
 { #0 }    % Address is placed before publisher (default)
-% { #1 }    % Address is placed after publisher 
+% { #1 }    % Address is placed after publisher
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       publisher
@@ -647,7 +647,7 @@ FUNCTION {bst.th}
 % }
 %
 % This is the definition of a function named "name".   The function "name" is
-% used in the following way 
+% used in the following way
 %
 % "foo" name
 % "foo" is an argument for the function "name".
@@ -692,7 +692,7 @@ ENTRY
 
 % sort.key$: key used for sorting entries.
 % It usually has the string of author - year - title - month.
-    
+
 
 %%% Declaration of variables:
 
@@ -820,9 +820,9 @@ FUNCTION {output.nonnull}
 %%% last.period.comma.
 FUNCTION {period.comma.p}
 { duplicate$ 't :=
-  t #-1 #1 substring$ "." = 
+  t #-1 #1 substring$ "." =
   t #-1 #1 substring$ "," = or
-  t #-1 #1 substring$ ":" = or 
+  t #-1 #1 substring$ ":" = or
   t #-1 #2 substring$ ".'" = or
   t #-1 #2 substring$ ",'" = or
   t #-1 #3 substring$ ".''" = or
@@ -839,9 +839,9 @@ FUNCTION {remove.pre.comma}
 { 's :=
   s empty$
     { "" }
-    { s #1 #1 substring$ "," = 
+    { s #1 #1 substring$ "," =
        { s #2 global.max$ substring$ }
-       { s #1 #1 substring$ "." = 
+       { s #1 #1 substring$ "." =
           { s #2 global.max$ substring$ }
           's
          if$
@@ -927,7 +927,6 @@ FUNCTION {output.check.nocomma}
 FUNCTION {fin.entry}
 { add.period.x
   write$
-  newline$
 }
 
 FUNCTION {new.block}
@@ -1003,12 +1002,12 @@ FUNCTION {format.names}
      { bst.author.name #0 =
        bst.author.name #1 =
        or
-          { bst.first.name.initial #0 = 
+          { bst.first.name.initial #0 =
   	   { s nameptr "{vv~}{ll}{, ff}{, jj}" format.name$ 't := }
   	   { s nameptr "{vv~}{ll}{, f.}{, jj}" format.name$ 't := }
   	  if$
   	}
-          { bst.first.name.initial #0 = 
+          { bst.first.name.initial #0 =
              { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't := }
              { s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't := }
   	  if$
@@ -1019,12 +1018,12 @@ FUNCTION {format.names}
      { bst.author.name #0 =
        bst.author.name #2 =
        or
-          { bst.first.name.initial #0 = 
+          { bst.first.name.initial #0 =
              { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't := }
              { s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't := }
   	 if$
           }
-          { bst.first.name.initial #0 = 
+          { bst.first.name.initial #0 =
                { s nameptr "{vv~}{ll}{, ff}{, jj}" format.name$ 't := }
                { s nameptr "{vv~}{ll}{, f.}{, jj}" format.name$ 't := }
   	 if$
@@ -1063,7 +1062,7 @@ FUNCTION {format.editornames}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { bst.first.name.initial #0 = 
+    { bst.first.name.initial #0 =
         { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't := }
         { s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't := }
       if$
@@ -1097,7 +1096,7 @@ FUNCTION {remove.ss.period.auth}
   bst.author.post 'tempb :=
   tempb #1 #1 substring$ "}" =
     { tempa tempb * }
-    { tempa #-1 #1 substring$ tempb #1 #1 substring$ = 
+    { tempa #-1 #1 substring$ tempb #1 #1 substring$ =
         { tempa tempb #2 global.max$ substring$ * }
         { tempa tempb * }
       if$
@@ -1110,8 +1109,8 @@ FUNCTION {compare.names.aer}
 { 's :=
   'tempa :=
 
-%   "current.author = " s * "\\" * write$ newline$
-%   "prev.author = " tempa * "\\" * write$ newline$
+%   "current.author = " s * "" * write$ newline$
+%   "prev.author = " tempa * "" * write$ newline$
 
   tempa num.names$ 'len1.aer :=  % len1 = the number of previous authors
   s num.names$ 'len2.aer :=         % len2 = the number of current authors
@@ -1133,11 +1132,11 @@ FUNCTION {compare.names.aer}
       s i.aer "{ff }{vv }{ll}{ jj}" format.name$
       =
         { #1 i.aer <
-            { " and " * }       % \bysame �ŏȗ����钘�҂̑O�ɂ� and 
+            { " and " * }       % \bysame �ŏȗ����钘�҂̑O�ɂ� and
             { }
           if$
           "\bysame{}" *
-          i.aer #1 + 'i.aer := } 
+          i.aer #1 + 'i.aer := }
         { #-1 'len1.aer := }
       if$
     }
@@ -1592,7 +1591,7 @@ FUNCTION {format.vol.num.pages}
         %% number is empty.
         { pages empty$
             % warning
-            { "there is no volume, number, and pages in " cite$ * warning$ "" } 
+            { "there is no volume, number, and pages in " cite$ * warning$ "" }
             { "" format.pages * }
          if$
         }
@@ -1693,7 +1692,7 @@ FUNCTION {format.organization}
 FUNCTION {output.publisher.address}
 { address empty$
     { format.publisher "publisher" output.check.nocomma }
-    { bst.address.position #0 = 
+    { bst.address.position #0 =
         { format.address output.nocomma
           format.publisher "publisher" output.check.nocomma }
         { format.publisher "publisher" output.check.nocomma
@@ -1746,7 +1745,7 @@ FUNCTION {output.address.organization.publisher}
               format.address output.nocomma }
             %% publisher is not empty
             { format.organization "organization" output.check.nocomma
-              bst.address.position #0 = 
+              bst.address.position #0 =
                 { format.address output.nocomma
                   format.publisher "publisher" output.check.nocomma }
                 { format.publisher "publisher" output.check.nocomma
@@ -1863,7 +1862,7 @@ FUNCTION {output.bibitem}
            }
          if$
          }
-       if$  
+       if$
      }
   if$
   newline$
@@ -1921,7 +1920,7 @@ FUNCTION {book}
   author empty$
     { format.editors "author and editor" output.check.nocomma }
     { format.authors output.nonnull.nocomma
-      "author and editor" editor either.or.check 
+      "author and editor" editor either.or.check
     }
   if$
   bst.year.position #0 =
@@ -2261,7 +2260,7 @@ FUNCTION {set.order.cited}
 }
 %%% Iterate for all entries:
 ITERATE {set.order.cited}
-  
+
 %%% Remove symbols and convert to lowercase.
 FUNCTION {sortify}
 { purify$ "l" change.case$ }
@@ -2311,13 +2310,13 @@ FUNCTION {format.lab.names.full}
               { ", " * t * }
               { t "others" =
                   { bst.and.others * }
-                  { numnames #2 > 
+                  { numnames #2 >
                       { bst.cite.ands * t * }
                       { bst.cite.and * t * }
                     if$
                   }
                 if$
-              }   
+              }
             if$
           }
           't
@@ -2378,13 +2377,13 @@ FUNCTION {format.names.full.wo.and}
               { " " * t * }
               { t "others" =
                   { " " * }
-                  { numnames #2 > 
+                  { numnames #2 >
                       { " " * t * }
                       { " " * t * }
                     if$
                   }
                 if$
-              }   
+              }
             if$
           }
           't
@@ -2591,10 +2590,10 @@ FUNCTION {reverse.num}
 
 %%% Convert year (large number -> small number)
 FUNCTION {convert.year}
-{ 't := 
+{ 't :=
   bst.reverse.year #0 =
     { t 'tt := }
-    { t #1 #1 substring$ reverse.num 
+    { t #1 #1 substring$ reverse.num
       t #2 #1 substring$ reverse.num *
       t #3 #1 substring$ reverse.num *
       t #4 #1 substring$ reverse.num * 'tt := }
@@ -2626,7 +2625,7 @@ FUNCTION {calc.cyear}
   econ.debug #0 = not
     { "sort.label = ``\texttt{" write$
       sort.label write$
-      "}''\\" write$
+      "}''" write$
       newline$
     }
     'skip$
@@ -2643,12 +2642,12 @@ FUNCTION {calc.sort.label.abb}
     }
     { author 's := }
   if$
-  s sort.format.names.abb 't := 
+  s sort.format.names.abb 't :=
   t sortify " " * year convert.year * 'sort.label.abb :=
   econ.debug #0 = not
     { "sort.label.abb = ``\texttt{" write$
       sort.label.abb write$
-      "}''\\" write$
+      "}''" write$
       newline$
     }
     'skip$
@@ -2676,7 +2675,7 @@ FUNCTION {calc.flabel}
   econ.debug #0 = not
     { "flabel = ``\texttt{" write$
       flabel write$
-      "}''\\" write$
+      "}''" write$
       newline$
     }
     'skip$
@@ -2704,7 +2703,7 @@ FUNCTION {calc.alabel}
   econ.debug #0 = not
     { "alabel = ``\texttt{" write$
       alabel write$
-      "}''\\" write$
+      "}''" write$
       newline$
     }
     'skip$
@@ -2902,7 +2901,7 @@ FUNCTION {presort.one}
   if$
   " " *
   sort.label.abb *
-  " " *  
+  " " *
   type$ "book" = type$ "inbook" = or
     'author.editor.sort
     { type$ "proceedings" =
@@ -2953,7 +2952,7 @@ FUNCTION {presort.one}
   econ.debug #0 = not
     { "``\texttt{" write$
       sort.key$ write$
-      "}''\\" write$
+      "}''" write$
       newline$
     }
     'skip$
@@ -3028,7 +3027,7 @@ FUNCTION {presort.two}
   econ.debug #0 = not
     { "``\texttt{" write$
       sort.key$ write$
-      "}''\\" write$
+      "}''" write$
       newline$
     }
     'skip$
@@ -3038,21 +3037,21 @@ FUNCTION {presort.two}
 %%% Codes for debugging
 FUNCTION {calc.alabel.mess}
 { econ.debug #0 = not
-    { "\textbf{Iteration of calc.alabel: alabel = }\\" write$
+    { "\textbf{Iteration of calc.alabel: alabel = }" write$
       newline$ }
     'skip$
  if$
 }
 FUNCTION {calc.flabel.mess}
 { econ.debug #0 = not
-    { "\textbf{Iteration of calc.flabel: flabel = }\\" write$
+    { "\textbf{Iteration of calc.flabel: flabel = }" write$
       newline$ }
     'skip$
  if$
 }
 FUNCTION {presort.one.mess}
 { econ.debug #0 = not
-    { "\textbf{Iteration of presort (1st time): \$sort.key = }\\" write$
+    { "\textbf{Iteration of presort (1st time): \$sort.key = }" write$
       newline$ }
     'skip$
  if$
@@ -3060,7 +3059,7 @@ FUNCTION {presort.one.mess}
 
 FUNCTION {presort.two.mess}
 { econ.debug #0 = not
-    { "\textbf{Iteration of presort (2nd time): \$sort.key = }\\" write$
+    { "\textbf{Iteration of presort (2nd time): \$sort.key = }" write$
       newline$ }
     'skip$
  if$
@@ -3068,7 +3067,7 @@ FUNCTION {presort.two.mess}
 
 FUNCTION {calc.cyear.mess}
 { econ.debug #0 = not
-    { "\textbf{Iteration of calc.cyear: sort.label = }\\" write$
+    { "\textbf{Iteration of calc.cyear: sort.label = }" write$
       newline$ }
     'skip$
  if$
@@ -3076,7 +3075,7 @@ FUNCTION {calc.cyear.mess}
 
 FUNCTION {calc.sort.label.abb.mess}
 { econ.debug #0 = not
-    { "\textbf{Iteration of calc.sort.label.abb: sort.label.abb = }\\" write$
+    { "\textbf{Iteration of calc.sort.label.abb: sort.label.abb = }" write$
       newline$ }
     'skip$
  if$
@@ -3182,7 +3181,7 @@ FUNCTION {reset.prev.author}
 EXECUTE {reset.prev.author}
 
 FUNCTION {forward.pass.two}
-{ bst.use.bysame #1 = 
+{ bst.use.bysame #1 =
     { author empty$
         { editor empty$
           { "" }
@@ -3223,8 +3222,7 @@ EXECUTE {punctuation}
 FUNCTION {begin.bib}
 {
   preamble$ empty$
-    'skip$
-    { preamble$ write$ newline$ }
+    { preamble$ write$ }
   if$
   bst.use.bysame #0 =
      % Not use \bysame.
@@ -3233,8 +3231,8 @@ FUNCTION {begin.bib}
      { "%%% Definition of \bysame" write$ newline$
        "\ifx\undefined\bysame" write$ newline$
        "\newcommand{\bysame}{" bst.bysame.definition * "}" *
-       write$ newline$
-       "\fi" write$ newline$ newline$ }
+       write$
+       "\fi" write$ newline$ }
   if$
   %% When number index is attached to the beginning of each item.
   bst.use.number.index #0 =
@@ -3256,8 +3254,8 @@ FUNCTION {begin.bib}
        "\relax" write$ newline$
        "\else" write$ newline$
        "\setlength{\bibhang}{"
-       hang * "}" * write$ newline$ 
-       "\fi" write$ newline$ newline$
+       hang * "}" * write$ newline$
+       "\fi" write$ newline$
        }
   if$
   "\begin{thebibliography}{xxx}" write$ newline$
@@ -3267,7 +3265,7 @@ FUNCTION {begin.bib}
 }
 
 FUNCTION {end.bib}
-{ newline$ "\end{thebibliography}" write$ newline$ }
+{"\end{thebibliography}" write$ newline$ }
 
 EXECUTE {begin.bib}
 
