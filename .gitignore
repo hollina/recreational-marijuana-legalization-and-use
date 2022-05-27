@@ -4,6 +4,9 @@
 .DS_Store
 data
 stata_packages
+raw_data
+data_for_analysis
+temp
 latex/latex_figures
 latex/latex_tables
 latex/figures
