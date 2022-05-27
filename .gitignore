@@ -13,8 +13,6 @@ latex/figures
 latex/tables
 latex_figures
 latex_tables
-figures
-tables
 renv/library
 
 # History files
