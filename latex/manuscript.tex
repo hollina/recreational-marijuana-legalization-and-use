@@ -99,7 +99,8 @@ Comparative Effects of Recreational and Medical Marijuana Laws On Drug Use Among
 Wing: \href{mailto:cwing@indiana.edu}{cwing@indiana.edu}. O'Neill School of Public and Environmental Affairs. Indiana University, 1315 E. Tenth Street, Bloomington, IN, 47405. 
 Bradford: \href{mailto:asbrad@iu.edu}{asbrad@iu.edu}. O'Neill School of Public and Environmental Affairs. Indiana University, 1315 E. Tenth Street, Bloomington, IN, 47405.
 
-We thank Patrick Carlin, Livy Crim, Ted Joyce, Tony LoSasso, Shyam Raman, and participants in the health workshop at Indiana University for their helpful comments.}} \\
+We thank Patrick Carlin, Livy Crim, Ted Joyce, Tony LoSasso, Shyam Raman, and participants in the health workshop at Indiana University for their helpful comments. 
+A replication package for this paper is available here, \url{https://doi.org/10.5281/zenodo.6588013}.}} \\
 
 
 \vspace{1cm}
@@ -142,6 +143,7 @@ Thirty-four states have adopted medical marijuana laws and ten states have adopt
 
 State governments are experimenting with policies that create legal marketplaces for marijuana. Thirty-four states have medical marijuana laws, which legalize marijuana consumption for people with a qualifying medical condition \citep{ProCon2018b}. More recently, ten states have adopted recreational marijuana laws that legalize marijuana consumption for adults without any qualifying health rationale \citep{ProCon2018}. These changes are controversial. The federal government and many states continue to have prohibition policies that make it illegal to sell and possess marijuana. 
 The move to legalize marijuana use expands personal liberty in ways that seem consistent with core ideas about American government. But creating and managing regulated markets for psychoactive substances is complicated and may have unintended consequences. Even if recreational drug use is viewed as a matter of personal liberty, there may be a role for government in supplying information about the quality of drugs on the market and the possible side-effects of drug use. In addition, legalizing marijuana may increase drug use in the general population, which could produce negative externalities. Underage marijuana use is another concern. Recreational laws prohibit children and adolescents from buying and consuming marijuana, but these age restrictions may be hard to enforce in practice. Similarly, medical marijuana laws are designed to allow marijuana use among people with qualifying health conditions. They are not supposed to facilitate recreational marijuana use. However, it is unclear how well medical marijuana laws are able to exclude recreational users from medical markets.
+
 In this paper, we bring data to bear on three questions about recent marijuana policy changes. First, how much do recreational laws alter the prevalence of marijuana use in the general population of U.S. adults? Second, do marijuana laws control underage marijuana use? Third, are medical laws \emph{de facto} recreational laws? That is, are people without qualifying health conditions just as able to obtain marijuana from medical markets as they would be from recreational markets? Our main analysis is based on data from the National Survey of Drug Use and Health Small Area Estimates (NSDUH SAE), and we use a generalized difference in difference (DID) design that exploits multiple policy changes. We find that recreational laws increase past-year marijuana use by about 15 percent among adults ages 18 to 25, and about 25 percent among adults over age 25. Access to dispensaries, physical locations where medical or recreational marijuana can be bought, are a key driver of the increases in use for those over the age of 25. Furthermore, our results suggest that that recreational laws are ineffective at controlling underage marijuana use. Specifically, adopting a recreational law increases marijuana use among adolescents ages 12 to 17 by about 10 percent. Our findings indicate that legalization increases marijuana use more for older age groups than for younger age groups. This is consistent with predictions by \citet{Jacobi2016}, who show using Australian data that younger age groups have greater pre-legalization access to marijuana and that access is an important predictor for post-legalization use. 
 
 Across all age groups, the effects of recreational laws are quantitatively large, statistically significant, and are not sensitive to an extensive set of robustness checks and changes in model specification. In contrast, medical laws have much smaller effects. In most age groups, the effect of recreational laws on marijuana use  is three to four times larger than the effect of medical laws. One interpretation is that recreational laws increase marijuana use in the general population, but medical laws mainly affect marijuana consumption in a smaller sub-population of people with qualifying health conditions. We also find some evidence that medical marijuana laws may lead to small reductions in alcohol and tobacco use, and that recreational laws may increase cocaine use. However, these results are less stable and are sensitive to specification choice. 
@@ -154,7 +156,7 @@ We use a decomposition technique to clarify the key sources of variation underly
 
 We also assess the extent to which our results are affected by features of the dataset we use in our analysis. The NSDUH SAE is a state-year level data that is released in overlapping two-year waves. We ensure that this structure is not driving or otherwise biasing our estimates away from zero by considering specifications with alternative treatment timing, by estimating specifications using every other year of data (so there is no overlap across waves), and by considering alternative constructions of p-values based on randomization inference procedures.  Our estimated treatment effects and estimates of statistical significance are consistent across all of these checks. 
 
-Our work relies heavily on survey based estimates of drug use from multiple waves of the NSDUH. One concern is that efforts to legalize marijuana may affect the extent to which NSDUH respondents are willing to give truthful and accurate answers to questions about drug use. We think the NSDUH is the best available data source for measuring marijuana use in representative samples of adults and adolescents in the U.S. and we found no evidence that there has been a change in measurement differences between the NSDUH and alternative school based surveys like the Youth Risk Behavior Survey (YRBS). However, to supplement our analysis of the NSDUH data, we also study the effects of recreational and medical marijuana laws using two non-survey data sources. First, using data from workplace drug tests, we find that recreational marijuana laws increase the the fraction of workplace drug tests that are positive for marijuana by about 30 percent. Second, using data from the FBI Uniform Crime Reports (UCR) we find that, recreational marijuana laws reduce adult arrests for marijuana possession by about 50 percent and increase juvenile arrests for marijuana possession by about 60 percent.  The non-survey results are interesting in their own right, but we view them as supporting evidence for our main result, which is that recreational marijuana laws generate substantial increases in the prevalence of marijuana use among adults and adolescents. 
+Our work relies heavily on survey based estimates of drug use from multiple waves of the NSDUH. One concern is that efforts to legalize marijuana may affect the extent to which NSDUH respondents are willing to give truthful and accurate answers to questions about drug use. We think the NSDUH is the best available data source for measuring marijuana use in representative samples of adults and adolescents in the U.S. and we found no evidence that there has been a change in measurement differences between the NSDUH and alternative school based surveys like the Youth Risk Behavior Survey (YRBS). However, to supplement our analysis of the NSDUH data, we also study the effects of recreational and medical marijuana laws using two non-survey data sources. First, using data from workplace drug tests, we find that recreational marijuana laws increase the the fraction of workplace drug tests that are positive for marijuana by about 35 percent. Second, using data from the FBI Uniform Crime Reports (UCR) we find that, recreational marijuana laws reduce adult arrests for marijuana possession by about 50 percent and increase juvenile arrests for marijuana possession by about 46 percent.  The non-survey results are interesting in their own right, but we view them as supporting evidence for our main result, which is that recreational marijuana laws generate substantial increases in the prevalence of marijuana use among adults and adolescents. 
 
 Our study is the first quasi-experimental analysis of the causal effects of recreational laws on marijuana use in the general population of adults and adolescents in the United States. Most prior work examining the effects of recreational marijuana laws on marijuana use focuses on the narrower sub-population of current students. We are also the first to compare the differential effect that dispensaries of both medical and recreational marijuana may have on marijuana use in the United States.
 
@@ -257,7 +259,7 @@ Despite these advantages, the NSDUH measures we use in our analysis are still ba
 
 \subsection{Marijuana Laws }\label{sec:data_laws}
 
-We collected information on recreational and medical marijuana laws from the \cite{NationalAllianceforModelStateDrugLaws2017a,NationalAllianceforModelStateDrugLaws2017}, ProCon.org, \cite{Powell2018}, and the language of individual state laws. In our main analysis, we coded policy adoption as the first year in which it was legal under state law for residents to possess and consume marijuana within the limitations of each individual state law. Some of our analysis also examines the effects of dispensaries. Although dispensaries are typically envisioned by the same law that legalizes possession and consumption, dispensaries typically do not actually open until one or more years after possession and consumption become legal. We collected data on dispensary opening dates in each state, for both medical and recreational dispensaries, by searching state and local newspaper articles for mentions of the first recreational or marijuana dispensary in the state and confirming using multiple sources. Citations for the source of our information on  the date of initial passage, the date when legal protections were provided, and the date when the first dispensary opened are available in an online replication package.\footnote{\url{https://github.com/hollina/recreational-marijuana-legalization-and-use}.}
+We collected information on recreational and medical marijuana laws from the \cite{NationalAllianceforModelStateDrugLaws2017a,NationalAllianceforModelStateDrugLaws2017}, ProCon.org, \cite{Powell2018}, and the language of individual state laws. In our main analysis, we coded policy adoption as the first year in which it was legal under state law for residents to possess and consume marijuana within the limitations of each individual state law. Some of our analysis also examines the effects of dispensaries. Although dispensaries are typically envisioned by the same law that legalizes possession and consumption, dispensaries typically do not actually open until one or more years after possession and consumption become legal. We collected data on dispensary opening dates in each state, for both medical and recreational dispensaries, by searching state and local newspaper articles for mentions of the first recreational or marijuana dispensary in the state and confirming using multiple sources. Citations for the source of our information on  the date of initial passage, the date when legal protections were provided, and the date when the first dispensary opened are available in an online replication package.\footnote{\url{https://doi.org/10.5281/zenodo.6588013}.}
 
 
 
@@ -383,7 +385,7 @@ These simple comparisons show that marijuana use increased more from 2005 to 201
 \begin{figure}[H]
     \caption{States that adopted recreational marijuana laws saw larger than average increases in marijuana use from 2005 to 2017.}
     \begin{minipage}{\linewidth}
-        \includegraphics[width=\linewidth]{../output/plots/bw-change-in-use.pdf}
+        \includegraphics[width=\linewidth]{../output/plots/figure-1.png}
     \end{minipage}
         \label{fig:change-in-mj-use-percent}
 \end{figure}
@@ -406,7 +408,7 @@ The table reports point estimates of the percent change in the prevalence of eac
 %------------------------------------------%
 \begin{figure}[h]
     \caption{Event-study estimates showing the impact of recreational marijuana legalization on marijuana use in the past year by age group.}
-    \includegraphics[width=.75\linewidth]{../output/plots/bw-event-study-estimates-ln-mj_use_365-bw.pdf}
+    \includegraphics[width=.75\linewidth]{../output/plots/figure_2.png}
     \label{fig:leads-and-lags-mj-past-year}
 \end{figure}
 
@@ -415,7 +417,7 @@ The table reports point estimates of the percent change in the prevalence of eac
 %------------------------------------------%
 \begin{figure}[h]
     \caption{Event-study estimates showing the impact of recreational marijuana legalization on marijuana use in the past month by age group.}
-    \includegraphics[width=.75\linewidth]{../output/plots/bw-event-study-estimates-ln-mj_use_30-bw.pdf}
+    \includegraphics[width=.75\linewidth]{../output/plots/figure_3.png}
     \label{fig:leads-and-lags-mj-past-month}
 \end{figure}
 
@@ -424,7 +426,7 @@ The table reports point estimates of the percent change in the prevalence of eac
 %------------------------------------------%
 \begin{figure}[h]
     \caption{Event-study estimates showing the impact of recreational marijuana legalization on new marijuana initiates by age group.}
-    \includegraphics[width=.75\linewidth]{../output/plots/bw-event-study-estimates-ln-mj_first_use-bw.pdf}
+    \includegraphics[width=.75\linewidth]{../output/plots/figure_4.png}
     \label{fig:leads-and-lags-mj-first-use}
 \end{figure}
 
@@ -478,18 +480,18 @@ Specifically, we obtained data on the fraction of Quest Diagnostics workplace dr
 Table \ref{tab:quest_regs} reports estimates of regressions of the log positivity rate on the marijuana policy variables using versions of the the specification in equation \ref{eq:two_way_fe_disp}, which allows the effect of the policies to change after dispensaries open. 
 The baseline specification in column (1) includes state fixed effects and year fixed effects. 
 Column (2) shows results from a model that includes a full set of census region by year fixed effects. 
-The results imply that when states adopt a recreational marijuana law, the fraction of workplace drug tests that are positive for marijuana use rises by almost 18 percent. 
+The results imply that when states adopt a recreational marijuana law, the fraction of workplace drug tests that are positive for marijuana use rises by almost 11 percent. 
 The positivity rate rises even more after dispensaries open. 
-In total, adopting a recreational marijuana law and opening dispensaries increase the workplace marijuana test positivity rate by about 30 percent. 
+In total, adopting a recreational marijuana law and opening dispensaries increase the workplace marijuana test positivity rate by about 35 percent. 
 Medical marijuana laws do not seem to affect the workplace test positivity rates. 
 
 %------------------------------------------%
-%    Figure 3 - MJ Use by RML Binary
+%    Figure 5 - MJ Use by RML Binary
 %------------------------------------------%
 \begin{figure}[h]
     \caption{The impact of recreational marijuana legalization on marijuana use by age group.}
     \begin{minipage}{\linewidth}
-      \includegraphics[width=\linewidth]{../output/plots/bw-main_recreational_figure_for_paper_robust_part_a.pdf}
+      \includegraphics[width=\linewidth]{../output/plots/figure-5.png}
        \label{fig:main_coef_plot}
     \end{minipage}
 \end{figure}
@@ -537,7 +539,7 @@ To make the results more interpretable, we transform the event study coefficient
 
 For the pre-treatment period all treatment estimates are statistically indistinguishable from zero and exhibit no problematic trends. 
 This suggests that before recreational marijuana is adopted there is no difference between the THC positivity rates in states that will eventually adopt and all other states. 
-Following adoption, there is a sharp rise in the percent of drug tests that indicate the presence of THC, with the point estimate hovering around 25\% in each year following recreational adoption. 
+Following adoption, there is a rise in the percent of drug tests that indicate the presence of THC, with the point estimate hovering around 30\% two through four years following recreational adoption. 
 
 These workplace drug testing results should be interpreted with caution. 
 Unlike the data from the NSDUH, the Quest Diagnostics workplace testing data can make no claim to being a random sample of firms or of workers or even of workers or firms that engage in workplace drug testing. 
@@ -585,8 +587,8 @@ We similarly find that sales arrests decline, although we cannot  identify the p
 
 For juveniles, the hypothesized effects of recreational legalization on both possession and sales arrests are unclear. 
 It could be that changes in policing cause reductions in arrests for both possession and sales. However, it is also plausible that increased access to marijuana leads to more youth consumption and sales and thus increased arrests since both youth possession and sales are illegal even following recreational legalization.  
-Difference in difference models suggest that juvenile arrests for possession of marijuana did not change when recreational marijuana was first legalized, but rose by 60\% after dispensaries opened. 
-In contrast, we find negative, but statistically insignificant, point estimates on effect for juvenile arrests for selling marijuana.
+Difference in difference models suggest that juvenile arrests for possession of marijuana did not change when recreational marijuana was first legalized, but rose by 46\% after dispensaries opened. 
+In contrast, we find statistically insignificant, point estimates on effect for juvenile arrests for selling marijuana.
 These results are consistent with the idea that following the opening of a recreational dispensary, access to marijuana increases for adolescents despite marijuana possession for this age group remaining illegal. 
 
 \subsection{Robustness Checks and Sensitivity Analysis}
@@ -742,17 +744,17 @@ West Virginia & 2017       & 2019 (NA)                                  &       
   \begin{minipage}{.9\linewidth}
   \begin{subfigure}[b]{0.32\columnwidth}
     \caption{\scriptsize{Marijuana use in past year}}
-    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_mj_use_365.pdf}
+    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_mj_use_365.png}
   \end{subfigure}
   \hfill %%
   \begin{subfigure}[b]{0.32\columnwidth}
       \caption{\scriptsize{Marijuana use in past 30 days}}
-    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_mj_use_30.pdf}
+    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_mj_use_30.png}
   \end{subfigure}
  \hfill %%
   \begin{subfigure}[b]{0.32\columnwidth}
       \caption{\scriptsize{Marijuana initiates in past two years}}
-    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_mj_first_use.pdf}
+    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_mj_first_use.png}
   \end{subfigure}
       \label{fig:bacon_lead_lag_mj}
          \begin{justify}
@@ -852,19 +854,19 @@ We collapse the $agency \times month$ data to $state \times year$ cells, recordi
 \begin{minipage}{.9\linewidth}
   \begin{subfigure}[b]{0.32\columnwidth}
     \caption{\scriptsize{Alcohol use in past 30 days}}
-    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_alc_use_30.pdf}
+    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_alc_use_30.png}
     \label{fig:bacon_lead_lag_alc_30}
   \end{subfigure}
   \hfill %%
   \begin{subfigure}[b]{0.32\columnwidth}
       \caption{\scriptsize{Tobacco use in past 30 days}}
-    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_tob_use_30.pdf}
+    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_tob_use_30.png}
     \label{fig:bacon_lead_lag_tob_30}
   \end{subfigure}
    \hfill %%
   \begin{subfigure}[b]{0.32\columnwidth}
     \caption{\scriptsize{Cocaine use in past year}}
-    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_coke_use_365.pdf}
+    \includegraphics[width=\linewidth]{../output/plots/bacon_weights_ln_coke_use_365.png}
     \label{fig:bacon_lead_lag_coke_365}
   \end{subfigure}
   \label{fig:bacon_lead_lag_oth}

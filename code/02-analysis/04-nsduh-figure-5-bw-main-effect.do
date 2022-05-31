@@ -390,4 +390,4 @@ twoway ///
 	
 	
 graph export "output/plots/bw-main_recreational_figure_for_paper_robust_part_a.pdf", replace	
-graph export "output/plots/bw-main_recreational_figure_for_paper_robust_part_a.png", replace	
+graph export "output/plots/figure-5.png", replace	

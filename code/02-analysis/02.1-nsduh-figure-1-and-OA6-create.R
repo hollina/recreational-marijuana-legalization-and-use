@@ -341,3 +341,4 @@ combined_plot <- plot_grid(percent_past_month, percent_past_year,
                            ncol = 2)
 
 ggsave(combined_plot, file = "output/plots/bw-change-in-use.pdf", width = 14, height = 7)
+ggsave(combined_plot, file = "output/plots/figure-1.png", width = 14, height = 7)

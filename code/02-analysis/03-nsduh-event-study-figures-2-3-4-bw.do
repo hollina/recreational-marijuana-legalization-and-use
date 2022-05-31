@@ -154,6 +154,7 @@ foreach y in `y_list' {
 
 
 local y_list mj_use_365 mj_use_30 mj_first_use 
+local figure_order = 2
 foreach y in `y_list' {
 	
  	// Make smaller versions. 
@@ -168,7 +169,8 @@ foreach y in `y_list' {
 
 	graph export "output/plots/bw-event-study-estimates-ln-`y'-bw.pdf", replace
 	
-	
+	graph export "output/plots/figure_`figure_order'.png", replace
+	local figure_order = `figure_order' + 1
 	
 	// Clean up
 	erase "output/plots/bw-event-study-estimates-ln-`y'-age-4.gph" 

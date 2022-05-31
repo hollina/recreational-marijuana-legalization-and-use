@@ -414,7 +414,7 @@ foreach y in `y_list' {
 		"output/plots/temp_bacon_weights_ln_`y'_age_3" ///
 		, col(1) ysize(20)  xcommon graphregion(margin(r+2))
 
-	graph export "output/plots/bacon_weights_ln_`y'.pdf", replace
+	graph export "output/plots/bacon_weights_ln_`y'.png", replace
 	
 	
 		erase "output/plots/temp_bacon_weights_ln_`y'_age_4.gph" 
